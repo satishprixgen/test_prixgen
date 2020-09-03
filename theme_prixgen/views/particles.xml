@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+<template id="particles_background" name="Particles background">
+  <section class="particle_js" id="particles-js" style="background-color:#000;">
+    <div class="oe_structure" />
+  </section>
+
+</template>
+
+<!-- place snippets -->
+<template id="place_particles" inherit_id="website.snippets" name="Prticle background place">
+  <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+    <t t-snippet="theme_prixgen.particles_background"
+       t-thumbnail="/theme_prixgen/static/src/img/ui/particlesjs-og.png"/>
+  </xpath>
+</template>
+</odoo>

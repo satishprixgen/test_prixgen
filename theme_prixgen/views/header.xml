@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+	<template id="custom_header" inherit_id="website.layout">
+		 <xpath expr="//div[@id='wrapwrap']/header" position="before">
+		 	<div class="container">
+		 		<div class="row">
+		 			<div class="col-lg-4 col-md-4 logo-header">
+						<div class="logo-wrapper"><h6 class="logo-content">
+						    <strong class="logo">
+								<a href="/" class="navbar-brand logo" >
+							        <span t-field="website.logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name" />
+							    </a>
+							</strong>
+						</h6>
+
+						</div>				
+			  		 </div>
+			  		 <div class="col-lg-8 col-md-8  form-inline flex-md-nowrap justify-content-between justify-content-md-center">
+						<div class="" >
+							 <form action="/shop" method="get">
+                                <div class="input-group">
+                                    <input type="text" name="search" class="search-query form-control oe_search_box" placeholder="Enter Keywords to Search..."/>
+                                    <button type="submit" class="btn oe_search_button aa-btn">
+                                        <i class="fa fa-search nav__search_icon hydrated" id="search-btn"></i>
+                                    </button>
+                                </div>
+                            </form>
+					
+						</div>
+						<div class="align-items-center justify-content-lg-end justify-content-between" >
+                            <div id="top_menu">
+                                <div id="custom_cart">
+										 <t t-set="website_sale_order" t-value="website.sale_get_order()"/>
+							            <div class="nav-item divider d-none"/> 
+							                <a href="/shop/cart" class="nav-link align-items-center aa-link">
+							                    <i style="font-size: 24px;" class="fa fa-shopping-cart"/>
+							                   <sup t-attf-class="my_cart_quantity badge badge-primary" t-esc="website_sale_order and website_sale_order.cart_quantity or '0'"/>
+							                </a>
+							           
+									</div>
+								</div>
+						</div>
+						<div class="align-items-center justify-content-lg-end justify-content-between">
+                            <div id="top_menu">
+                                <div id="custom_cart">
+										 <!-- <t t-set="website_sale_order" t-value="website.sale_get_order()"/>
+							            <div class="nav-item divider d-none"/> 
+							                <a href="/shop/cart" class="nav-link align-items-center aa-link">
+							                    <i style="font-size: 24px;" class="fa fa-heart"/>
+							                   <sup t-attf-class="my_cart_quantity badge badge-primary" t-esc="website_sale_order and website_sale_order.cart_quantity or '0'"/>
+							                </a> -->
+
+							                <t t-if="request.website.viewref('website_sale_wishlist.add_to_wishlist').active">
+								                <t t-set='wishcount' t-value="len(request.env['product.wishlist'].current())"/>
+								              
+								                    <a href="/shop/wishlist" class="nav-link align-items-center aa-link">
+								                        <i class="fa fa-heart" style="font-size: 24px;"/>
+								                       <sup t-attf-class="my_wish_quantity o_animate_blink badge badge-primary"><t t-esc='wishcount'/></sup>
+								                    </a>
+								               
+								            </t>
+							           
+									</div>
+								</div>
+						</div>
+						
+					</div>
+
+
+
+		 		</div>
+             
+		 	</div>	
+		 </xpath>
+	</template>
+
+	<template id="hide_wishlist" inherit_id="website_sale_wishlist.header">
+		<xpath expr="//li[hasclass('o_wsale_my_wish')]" position="attributes">
+          <attribute name="class" separator=" " add="d-none"/>
+        </xpath>
+	</template>
+	<!-- <template id="hide_cart" inherit_id="website_sale.header">
+		<xpath expr="//li/a[hasclass('fa-shopping-cart')]" position="attributes">
+          <attribute name="t-attf-class" separator=" " add="d-none"/>
+           <attribute name="t-attf-class" >nav-item o_wsale_my_cart d-none</attribute>
+        </xpath>
+	</template> -->
+</odoo>

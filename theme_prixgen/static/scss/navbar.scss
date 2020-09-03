@@ -1,0 +1,42 @@
+.navbar-light{
+    background-color: #e00716 !important;
+    border-bottom: 2px solid #fff;
+
+	ul{
+		li{
+		  .dropdown-menu {
+						  a{
+						      color: #000 !important;
+				              font-weight: 400;
+						  }
+		   
+		  }
+	     	a{
+               color:#fff !important;
+               font-weight:600;
+	     		}
+		  }
+	}
+
+   }
+
+   .navbar-light .navbar-nav .nav-link{
+       &.active {
+             background-color: #ecf0f373;
+           }
+           &:hover{
+            background-color: #ecf0f373;
+           }
+    }
+
+    .navbar .nav-item{
+    text-align:center;
+    }
+
+    @media (min-width: 768px){
+.navbar-expand-md .navbar-nav .nav-link {
+	
+	padding-left:20px;
+	padding-right:20px;
+}
+}

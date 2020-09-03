@@ -1,0 +1,59 @@
+.header-middle .middle-right-content {
+    display: table;
+    margin-top: 5px;
+    }
+
+.flex, .align-items-center, .flex-center, .justify-content-center {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+       -webkit-flex-wrap: wrap; 
+        flex-wrap: wrap;
+    }
+
+.badge-primary {
+    background-color: #f66823;
+    color: #ffffff;
+    
+}
+.aa-link{
+  color:#000;
+}
+button.aa-btn {
+    position: absolute;
+    font-size: inherit;
+    right: 21px;
+    background: transparent;
+    padding: 0;
+    line-height: 1;
+    top: 8px;
+    z-index: 101;
+}
+nav{
+
+    .navbar-brand{
+
+            display:none
+              
+          }
+  }
+@media (min-width: 768px){
+
+            nav{
+                .navbar-collapse {
+                    flex-grow: 0;
+                }
+              }
+              div.logo-header{
+                .navbar-brand{
+                     img.img-fluid{     
+                            max-width: 60% !important;
+                            height: auto;
+                            }
+                 
+                     }
+        }
+
+            
+}
+

@@ -1,0 +1,389 @@
+
+* {
+  box-sizing: border-box;
+}
+.services {
+    background: #EAEAEA;
+    padding: 1em;
+    margin: 2em 0 3em;
+    li {
+        display: block;
+        position: relative;
+        background-color: #16a085;
+        color: #FFF;
+        padding: 2em;
+        text-align: center;
+        margin-bottom: 1em;
+        font-size: 1.5em;
+    }
+}
+
+.flip_snippet{
+    margin-top:20px;
+    margin-bottom:20px;
+
+}
+
+.flip {
+  -webkit-perspective: 800;   
+          perspective: 800;
+        position: relative;
+        text-align: center;
+}
+.flip .card.flipped {
+  -webkit-transform: rotatey(-180deg);
+          transform: rotatey(-180deg);
+}
+.flip .card {
+    width: 100%;
+    height: 178px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    background-color: #fff;
+   
+}
+.flip .card .face {
+  -webkit-backface-visibility: hidden ;
+    backface-visibility: hidden ;
+   z-index: 2;
+}
+.flip .card .front {
+   position: absolute;
+   width: 100%;
+   z-index: 1;
+}
+.flip .card .front img{
+  width: 100%;
+  height: 178px;
+}
+.flip .card .img {
+   position: relaitve;
+   width: 100%;
+   height: auto;
+   z-index: 1;
+   border: 2px solid #000;
+}
+.flip .card .back {
+  padding-top: 10%;
+  -webkit-transform: rotatey(-180deg);
+          transform: rotatey(-180deg);
+  position: absolute;
+}
+.inner{
+  margin:0px !important;
+  //width: 270px;
+}
+
+
+    @media (max-width: 768px){
+     .flip {
+             padding:3px;
+            .card {
+                 height:400px;
+                     .front img{
+                         width: 100%;
+                         height: 400px;
+            }
+         }
+      }
+    }
+
+
+
+.snippet_testimonial {
+  border: 1px solid #EAEAEA;
+  padding: 20px;
+}
+
+// These lines will add a default style for our snippet. Now let's create our custom rules for the options.
+
+.snippet_testimonial {
+  border: 1px solid #EAEAEA;
+  padding: 20px;
+
+  &.opt_shadow img {
+    box-shadow: 0 2px 5px rgba(51, 51, 51, 0.4);
+  }
+
+  &.opt_grey_bg {
+    border: none;
+    background-color: #EAEAEA;
+  }
+}
+
+
+.divider_black{
+
+    height: 35px;
+    width: 100%;
+    margin: 0px auto;
+    background: url(/theme_prixgen/static/src/img/ui/divider_black.png) no-repeat scroll center transparent;
+    padding: 6px;
+
+}
+
+//snippet client carousel
+/* [1] The container */
+.zoom {
+         padding: 30px 0;
+  
+   & img {
+  transition: transform .5s ease;
+  -webkit-filter: grayscale(100%); 
+   filter: grayscale(100%);
+  }
+    &:hover img {
+   
+      transform: scale(1.5);
+       filter: none;
+       -webkit-filter: none; 
+   }
+}
+
+
+
+//services block
+.collection {
+
+        width: 100%;
+        position: relative;
+        margin-bottom: 30px;
+        background-color: #3a424c;
+        display: inline-block;
+        cursor: pointer;
+        overflow: hidden;
+
+                .block-img {
+                    background-size: cover;
+                    -moz-background-size: cover;
+                    -webkit-background-size: cover;
+                    -o-background-size: cover;
+                    background-position: center;
+                    transition: all 1s ease;
+                    -moz-transition: all 1s ease;
+                    -ms-transition: all 1s ease;
+                    -webkit-transition: all 1s ease;
+                    -o-transition: all 1s ease;
+                    display: table;
+                    vertical-align: middle;
+                    height: 350px;
+                    background-repeat: no-repeat;
+                    &:hover {
+                       
+                           transform: scale(1.05);
+                            -moz-transform: scale(1.05);
+                            -webkit-transform: scale(1.05);
+                            -o-transform: scale(1.05);
+                            -ms-transform: scale(1.05);
+                            -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')";
+                            filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand');
+                         
+
+                            .dark {
+                                    height: 100%;
+                                    opacity: 0;
+                                }
+                             }
+
+                   .dark {
+                        background-color: #3a424c;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        height: 100%;
+                        opacity: .45;
+                        transition: all .3s ease;
+                        -webkit-transition: all .3s ease;
+                        -moz-transition: all .3s ease;
+                        -o-transition: all .3s ease;
+
+                         }
+
+     .inside-collection {
+                    color: #fff;
+                    line-height: .6;
+                    display: inline-block;
+                    position: relative;
+                    margin: 0 auto;
+                    transition: all .3s ease;
+                    -webkit-transition: all .3s ease;
+                    -moz-transition: all .3s ease;
+                    -o-transition: all .3s ease;
+                    text-align: center;
+                    display: table-cell;
+                    vertical-align: middle;
+
+                    .detail {
+                            text-decoration: none;
+                            color: #fff!important;
+                            background-color: transparent!important;
+                            border: 1px solid #fff!important;
+                            padding: 11px 19px;
+                            margin: 15px 0 28px 0;
+                        }
+                  }
+         }
+
+    .col-sm-6 {
+    text-align: center;
+    padding: 40px 0;
+    margin: 0;
+   }
+
+}
+
+.btn-box{
+    margin: 20px auto;
+    border: none;
+    padding: 10px 25px;
+    position: relative;
+    &::before{
+        transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        content: '';
+        width: 50%;
+        height: 100%;
+        background: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    & .btn-text{
+        color: white;
+        // check out mdn docs for different types of blend modes. 
+        mix-blend-mode: difference;
+    }
+    &:hover{
+        &::before{
+            background: black;
+            width: 100%;
+          }
+          & a{
+          text-decoration:none;
+          }
+      }
+   }
+
+@media (min-width: 1200px){
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
+    float: left;
+}
+section.collection .col-lg-2{
+    max-width:20% ;
+}
+
+}
+@media (min-width: 992px){
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+    float: left;
+}
+section.collection .col-lg-2{
+    max-width:20%;
+}
+
+}
+
+@media (min-width: 768px){
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+    float: left;
+}
+
+}
+
+@media (min-width: 768px) and (max-width:992px){
+   section.collection section:last-child {
+  max-width:100%;
+}
+}
+
+
+@media (max-width: 767px){
+.collection .block-img {
+   
+    max-width: 100%;
+}
+
+}
+
+
+//solution snippets styles
+.img-responsive{ 
+    display: block;
+    width: 100%\9;
+    max-width: 100%;
+    height: auto;
+    }
+
+.promo-snippet {
+        display: inline-block;
+        margin-top: 10px;
+
+            .col-md-4 {
+                padding: 0 0;
+                margin: 0;
+
+              .promo-block {
+                        display: inline-block;
+                        width: 100%;
+                        padding-bottom: 2.3%;
+                        vertical-align: top;
+                        &:last-child {
+                                padding-bottom: 0;
+                            }
+                    }
+
+             .middle-promo-block {
+                         padding: 0 2.3%;
+                         display: inline-block;
+                         width: 100%;
+                         vertical-align: top;
+                        }
+                }
+}
+
+@media (max-width: 767px){
+.promo-snippet .col-md-4 .middle-promo-block {
+    padding: 0;
+    padding-bottom: 2.3%;
+}
+.promo-snippet .col-md-4 .promo-block:last-child {
+    padding-bottom: 2.3%;
+}
+}
+
+
+//offers
+
+.services-v7 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+    .item-sv a {
+              border: 3px solid #e8e8e8;
+              border-radius: 5px;
+              -webkit-border-radius: 5px;
+              display: block;
+              transition: all 0.1s ease-in-out 0s;
+              -webkit-transition: all 0.1s ease-in-out 0s;
+              text-decoration:none;
+
+              :hover {
+                border-color: #f7f7f7;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+                -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            }
+
+            h3{
+
+            color:#000;
+            }
+          }
+
+    img{
+    max-width:100%;
+
+    }
+}

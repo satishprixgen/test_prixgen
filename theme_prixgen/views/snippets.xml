@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+<template id="snippet_testimonial" name="Testimonial snippet">
+  <section class="snippet_testimonial">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-4">
+          <img alt="client" class="rounded-circle" src="/theme_prixgen/static/src/img/client_1.jpg"/>
+          <h3>Client Name</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="col-lg-4">
+          <img alt="client" class="rounded-circle" src="/theme_prixgen/static/src/img/client_2.jpg"/>
+          <h3>Client Name</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="col-lg-4">
+          <img alt="client" class="rounded-circle" src="/theme_prixgen/static/src/img/client_3.jpg"/>
+          <h3>Client Name</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<template id="snippet_divider" name="Divider snippet">
+  <section class="snippet_divider">
+    <div class="divider_black">
+      
+    </div>
+  </section>
+</template>
+
+
+<template id="client_logo" name="client logo slider">
+<section class="client_logo">
+<div class="container">
+  <div class="row text-center justify-content-center">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 zoom">
+            <img src="/theme_prixgen/static/src/img/clients/mcl.png" class="img-fluid" alt="Murudeshwar ceramic limited "/>
+          </div>
+          <div class="col-lg-2 col-md-2  col-sm-4 col-xs-6 zoom">
+            <img src="/theme_prixgen/static/src/img/clients/vahini.png" class="img-fluid" alt="Vahini irrigations"/>
+          </div>
+          <div class="col-lg-2 col-md-2  col-sm-4 col-xs-6 zoom">
+          
+                <img src="/theme_prixgen/static/src/img/clients/usc.png" class="img-fluid" alt="Universal Sales Corporation"/>
+            
+          </div>
+          <div class="col-lg-2 col-md-2  col-sm-4 col-xs-6 zoom">
+        
+              <img src="/theme_prixgen/static/src/img/clients/naveentile.png" class="img-fluid" alt="Naveen Tile"/>
+            
+          </div> 
+          <div class="col-lg-2 col-md-2  col-sm-4 col-xs-6 zoom">
+            <img src="/theme_prixgen/static/src/img/clients/42gears.png" class="img-fluid" alt=" 42Gears"/>
+          </div>
+          <div class="col-lg-2 col-md-2  col-sm-4 col-xs-6 zoom">
+            <img src="/theme_prixgen/static/src/img/clients/dms.png" class="img-fluid" alt="Daimond Metal Screens Pvt Ltd"/>
+          </div>
+         
+ </div>
+</div>
+</section>
+</template>
+
+
+<template id="services_snippet" name="services snippet">
+      <section class="collection">
+          <section class="col-lg-2 col-md-6 col-sm-6 block-img " style="background-image: url(&quot;theme_prixgen/static/src/img/services1.png&quot;);">
+            <div class="dark"></div>
+            <div class="inside-collection">
+              <h3>ENTERPRISE SERVICES</h3>
+              <button class="btn-box">
+                <a class="btn-text" href="/en_US/shop/category/raspberry-pi-400">See More</a>
+              </button>
+            </div>
+          </section>
+          <section class="col-lg-2 col-md-6 col-sm-6 block-img" style="background-image: url(&quot;theme_prixgen/static/src/img/iiot-service.jpeg&quot;);">
+            <div class="dark"></div>
+            <div class="inside-collection">
+              <h3>IIOT</h3>
+                <button class="btn-box">
+                <a class="btn-text" href="/en_US/shop/category/raspberry-pi-400">See More</a>
+              </button>
+            </div>
+          </section>
+          <section class="col-lg-2 col-md-6 col-sm-6 block-img " style="background-image: url(&quot;theme_prixgen/static/src/img/enterprisemobilty.jpeg&quot;);">
+            <div class="dark"></div>
+            <div class="inside-collection">
+              <h3>ENTERPRISE MOBILITY SOLUTIONS</h3>
+                 <button class="btn-box">
+                <a class="btn-text" href="/en_US/shop/category/raspberry-pi-400">See More</a>
+              </button>
+            </div>
+          </section>
+          <section class="col-lg-2 col-md-6 col-sm-6 block-img" style="background-image: url(&quot;theme_prixgen/static/src/img/services1.png&quot;);">
+            <div class="dark"></div>
+            <div class="inside-collection">
+              <h3>BUSINESS INTELLIGENCE</h3>
+                <button class="btn-box">
+                <a class="btn-text" href="/en_US/shop/category/raspberry-pi-400">See More</a>
+              </button>
+            </div>
+          </section>
+          <section class="col-lg-2 col-md-6 col-sm-6 block-img  " style="background-image: url(&quot;theme_prixgen/static/src/img/services1.png&quot;);">
+            <div class="dark"></div>
+            <div class="inside-collection">
+              <h3>IT INFRASTRUCTURE</h3>
+                 <button class="btn-box">
+                <a class="btn-text" href="/en_US/shop/category/raspberry-pi-400">See More</a>
+              </button>
+            </div>
+          </section>
+           <!-- <section class="col-lg-2 col-md-6 col-sm-6 block-img  " style="background-image: url(&quot;theme_prixgen/static/src/img/services1.png&quot;);">
+              <div class="dark"></div>
+              <div class="inside-collection">
+                <h3>Arduino</h3>
+                  <button class="btn-box">
+                <a class="btn-text" href="/en_US/shop/category/raspberry-pi-400">Ver Más</a>
+              </button>
+              </div>
+          </section> -->
+    </section>
+  </template>
+
+<template id="solutions_snippet" name="solution snippet">
+  <section class="promo-snippet">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <div class="promo-block">
+                <a href="#">
+                  <img class="img-responsive" src="/theme_prixgen/static/src/img/sap.jpg" style="animation-play-state: paused; transition: none 0s ease 0s"/>
+                </a>
+              </div>
+              <div class="promo-block">
+                <a href="#">
+                  <img class="img-responsive" src="/theme_prixgen/static/src/img/md.jpg" style="animation-play-state: paused; transition: none 0s ease 0s"/>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="middle-promo-block">
+                <a href="#">
+                  <img class="img-responsive" src="/theme_prixgen/static/src/img/odoo.jpg" style="animation-play-state: paused; transition: none 0s ease 0s"/>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="promo-block">
+                <a href="#">
+                  <img class="img-responsive" src="/theme_prixgen/static/src/img/iiot.jpg" style="animation-play-state: paused; transition: none 0s ease 0s"/>
+                </a>
+              </div>
+              <div class="promo-block">
+                <a href="#">
+                  <img class="img-responsive" src="/theme_prixgen/static/src/img/powerbi.jpg" style="animation-play-state: paused; transition: none 0s ease 0s"/>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+ </template>
+
+<!-- background video snippets -->
+<template id="video_bg" name="Video background">
+      <section class="section">
+
+        <h1>Welcome To Paradise</h1>
+
+        <div class="video-container">
+            <div class="color-overlay"></div>
+            <video autoplay="autoplay" loop="loop" muted="muted">
+                <source src="/theme_prixgen/static/src/img/videos/City.mp4" type="video/mp4"/>
+            </video>
+        </div>
+
+    </section>
+
+</template>
+
+
+
+<!-- slider -->
+<template id="s_aa_carousel" name="carousel">
+    <div id="aa_carousel" class="s_quotes_carousel s_carousel_default carousel slide" data-interval="10000">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#aa_carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#aa_carousel" data-slide-to="1"></li>
+            <li data-target="#aa_carousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Content -->
+        <div class="carousel-inner">
+            <!-- #01 -->
+            <div class="carousel-item active bg-200 pt80 pb80" style="background-image: url('/web/image/website.s_quotes_carousel_demo_image_1'); background-position: 50% 50%;" data-name="Slide">
+                <div class="container">
+                    <div class="row content">
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- #02 -->
+            <div class="carousel-item oe_img_bg pt80 pb80" style="background-image: url('/web/image/website.s_quotes_carousel_demo_image_1'); background-position: 50% 50%;" data-name="Slide">
+                <div class="container">
+                    <div class="row content">
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- #03 -->
+            <div class="carousel-item oe_img_bg pt80 pb80" style="background-image: url('/web/image/website.s_quotes_carousel_demo_image_2'); background-position: 50% 50%;" data-name="Slide">
+                <div class="container">
+                    <div class="row content">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <div class="carousel-control-prev" data-target="#aa_carousel" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+            <span class="carousel-control-prev-icon"/>
+            <span class="sr-only">Previous</span>
+        </div>
+        <div class="carousel-control-next" data-target="#aa_carousel" data-slide="next" role="img" aria-label="Next" title="Next">
+            <span class="carousel-control-next-icon"/>
+            <span class="sr-only">Next</span>
+        </div>
+    </div>
+</template>
+
+<!-- Offers Section -->
+<template id="offers_section" name="offers section">
+  <section>
+      <div class="services-v7">
+        <div class="row">
+          <div class="item-sv col-lg-4 col-md-4 col-sm-4">
+            <a href="#" title="Water Heater">
+              <img src="https://images.buildpro.store/pub/media/wysiwyg/banner/634-x-370-AO-Smith.jpg" alt="Service"/><h3><center>Water Heater</center></h3>
+            </a>
+          </div>
+
+          <div class="item-sv col-lg-4 col-md-4 col-sm-4">
+            <a href="#" title="Quick RFQ">
+              <img src="https://images.buildpro.store/pub/media/wysiwyg/banner/rfq-list.jpg" alt="Quick RFQ"/>
+            </a>
+          </div>
+          
+          <div class="item-sv col-lg-4 col-md-4 col-sm-4">
+            <a href="#" title="Wash Basin">
+              <img src="https://images.buildpro.store/pub/media/wysiwyg/WashBasin.png" alt="Wash Basin"/> <h3><center>Upto 20% Discount</center></h3>
+            </a>
+          </div>
+        </div>
+      </div>
+  </section>
+</template>
+<!-- Offers Section -->
+
+<!-- place snippets -->
+<template id="place_into_bar" inherit_id="website.snippets" name="Place into bar">
+  <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+    <t t-snippet="theme_prixgen.snippet_testimonial"
+       t-thumbnail="/theme_prixgen/static/src/img/ui/snippet_thumb.jpg"/>
+    <t t-snippet="theme_prixgen.offers_section"
+       t-thumbnail="/theme_prixgen/static/src/img/ui/offers.jpeg"/>
+
+  </xpath>
+</template>
+<template id="place_divider" inherit_id="website.snippets" name="Place divider">
+  <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+    <t t-snippet="theme_prixgen.snippet_divider"
+       t-thumbnail="/theme_prixgen/static/src/img/ui/divider_black.png"/>
+  </xpath>
+</template>
+<template id="client_logo-place" inherit_id="website.snippets" name="place client logos">
+  <xpath expr="//div[@id='snippet_feature']/div[@class='o_panel_body']" position="inside">
+    <t t-snippet="theme_prixgen.client_logo"
+       t-thumbnail="/theme_prixgen/static/src/img/ui/client-carosoual.png"/>
+  </xpath>
+</template>
+
+<template id="services_snippet_place" inherit_id="website.snippets" name="place service snippet">
+  <xpath expr="//div[@id='snippet_feature']/div[@class='o_panel_body']" position="inside">
+    <t t-snippet="theme_prixgen.services_snippet"
+       t-thumbnail="/theme_prixgen/static/src/img/ui/client-carosoual.png"/>
+  </xpath>
+</template>
+
+<template id="solutions_snippet_place" inherit_id="website.snippets" name="place solution snippet">
+  <xpath expr="//div[@id='snippet_feature']/div[@class='o_panel_body']" position="inside">
+    <t t-snippet="theme_prixgen.solutions_snippet"
+       t-thumbnail="/theme_prixgen/static/src/img/ui/solutions.png"/>
+  </xpath>
+</template>
+
+<template id="video_bg_snippet" inherit_id="website.snippets" name="Video background">
+  <xpath expr="//div[@id='snippet_feature']/div[@class='o_panel_body']" position="inside">
+    <t t-snippet="theme_prixgen.video_bg"
+       t-thumbnail="/theme_prixgen/static/src/img/ui/bg.png"/>
+    <t t-snippet="theme_prixgen.s_aa_carousel" t-thumbnail="/theme_prixgen/static/src/img/snippets.png"/>
+
+  </xpath>
+
+</template>
+</odoo>
